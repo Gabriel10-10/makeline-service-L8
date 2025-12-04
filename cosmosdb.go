@@ -45,6 +45,7 @@ func NewCosmosDBOrderRepoWithManagedIdentity(cosmosDbEndpoint string, dbName str
 		return nil, err
 	}
 
+	
 	return &CosmosDBOrderRepo{container, partitionKey}, nil
 }
 
